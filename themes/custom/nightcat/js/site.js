@@ -1,6 +1,6 @@
 (function ($, Drupal) {
   $(document).ready(function() {
-    $('<li class="br"></li>').insertAfter('.menu-315');
+    $('<li class="br"></li>').insertAfter('#nav .menu-item:nth-child(4)');
 
     $('#content .node--type-portfolio .node__content').bxSlider({
         auto: true,

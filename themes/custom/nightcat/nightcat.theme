@@ -15,6 +15,7 @@ function nightcat_page_attachments_alter(array &$attachments) {
 
 function nightcat_preprocess_page(&$variables) {
   $variables['site_name'] = \Drupal::config('system.site')->get('name');
+  $variables['main_menu'] = _nightcat_menu_links();
 }
 
 function nightcat_preprocess_html(&$variables) {
@@ -27,4 +28,18 @@ function nightcat_preprocess_html(&$variables) {
   else {
     $variables['attributes']['class'][] = 'page-node-' . $node;
   }
+}
+
+function _nightcat_menu_links($menu = 'main', $depth = 1) {
+  $menu_params = new Drupal\Core\Menu\MenuTreeParameters();
+  $menu_params->setMaxDepth($depth);
+  $menu_tree_service = Drupal::service('menu.link_tree');
+  $tree = $menu_tree_service->load($menu, $menu_params);
+  $manipulators = [
+    ['callable' => 'menu.default_tree_manipulators:checkNodeAccess'],
+    ['callable' => 'menu.default_tree_manipulators:checkAccess'],
+    ['callable' => 'menu.default_tree_manipulators:generateIndexAndSort'],
+  ];
+  $tree = $menu_tree_service->transform($tree, $manipulators);
+  return $menu_tree_service->build($tree);
 }

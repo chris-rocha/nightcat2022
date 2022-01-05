@@ -15,5 +15,6 @@ regions:
   content: 'The main content of the current page.'
   footer: 'Items for the footer region'
 
-# stylesheets-remove:
+stylesheets-remove:
 #   - core/themes/classy/css/components/progress.css
+  - core/themes/classy/css/components/menu.css
