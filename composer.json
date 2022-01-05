@@ -41,6 +41,10 @@
         "drupal-scaffold": {
             "locations": {
                 "web-root": "./"
+            },
+            "file-mapping": {
+                "./sites/development.services.yml": false,
+                "./robots.txt": false
             }
         },
         "installer-paths": {
@@ -93,5 +97,13 @@
                 "      composer remove drupal/core-project-message"
             ]
         }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "find modules/contrib vendor -name '.git' | xargs rm -rf"
+        ],
+        "post-update-cmd": [
+            "find modules/contrib vendro -name '.git' | xargs rm -rf"
+        ]
     }
 }
