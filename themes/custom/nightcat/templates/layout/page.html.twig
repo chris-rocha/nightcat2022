@@ -1,0 +1,27 @@
+{% if page.header %}
+  {{ page.header }}
+{% endif %}
+<div id="container">
+    <div id="header">
+        <a href="/"><h1><span class="text">{{ site_name }}</span></h1></a>
+        <div id="nav">
+            main menu
+        </div>
+    </div>
+  <main id="content" role="main">
+  {{ page.content }}
+  </main>
+  <div id="caption"></div>
+  <div id="footer">
+    <ul>
+        <li>&copy; {{ 'now'|date('Y') }} Nightcat Studio, Inc.</li>
+        <li>1425 East Crawford Street</li>
+        <li>Tampa, Florida 33604-5041</li>
+        <li>813 238 8532</li>
+        <li><a href="mailto:kelly@nightcatstudio.com">kelly@nightcatstudio.com</a></li>
+    </ul>
+  </div>
+</div>
+{% if page.footer %}
+  {{ page.footer }}
+{% endif %}

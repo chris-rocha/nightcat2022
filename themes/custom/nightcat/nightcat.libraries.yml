@@ -2,15 +2,16 @@ global-styling:
   version: VERSION
   css:
     theme:
+      # css/jquery.bxslider.min.css: { weight: -20 }
       css/fonts.css: { weight: -10 }
-      css/style.css: { weight: 1 }
+      css/style.css: { weight: -1 }
 
 global-scripts:
   version: VERSION
   js:
     js/jquery.bxslider.min.js: { weight: -10 }
-    js/jquery.touchwhipe.min.js: { weight: -9 }
-    js/site.js: { weight: 1 }
+    js/jquery.touchwipe.min.js: { weight: -9 }
+    js/site.js: { weight: -1 }
   dependencies:
     - core/jquery
     - core/drupal
