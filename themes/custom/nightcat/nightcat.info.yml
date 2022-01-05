@@ -1,0 +1,19 @@
+name: Nightcat
+type: theme
+description: 'Custom theme'
+package: Custom
+version: VERSION
+core_version_requirement: ^8 || ^9
+base theme: classy
+
+libraries:
+  - nightcat/global-styling
+  - nightcat/global scripts
+
+regions:
+  header: 'Items for the header region'
+  content: 'The main content of the current page.'
+  footer: 'Items for the footer region'
+
+# stylesheets-remove:
+#   - core/themes/classy/css/components/progress.css
