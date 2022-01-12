@@ -756,6 +756,10 @@ $settings['entity_update_backup'] = TRUE;
  */
 $settings['migrate_node_migrate_type_classic'] = FALSE;
 
+if (file_exists(__DIR__ . '/settings.prod.php')) {
+  include __DIR__ . '/settings.prod.php';
+}
+
 // Automatically generated include for settings managed by ddev.
 if (file_exists(__DIR__ . '/settings.ddev.php') && getenv('IS_DDEV_PROJECT') == 'true') {
   include __DIR__ . '/settings.ddev.php';
@@ -778,7 +782,3 @@ if (file_exists(__DIR__ . '/settings.ddev.php') && getenv('IS_DDEV_PROJECT') == 
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
-
-if (file_exists(__DIR__ . '/settings.prod.php')  && getenv('IS_DDEV_PROJECT') == 'false') {
-  include __DIR__ . '/settings.prod.php';
-}
