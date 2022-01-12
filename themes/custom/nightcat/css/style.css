@@ -58,128 +58,75 @@ a {
   color: #000;
   text-decoration: none;
 }
-body.path-frontpage h1:after,
-body.path-user h1:after {
+
+h1::after {
+  background-position: center;
   background-repeat: no-repeat;
-  background-image: url("../images/cats/about.png");
   background-size: contain;
+}
+body.path-frontpage h1::after,
+body.path-user h1::after {
+  background-image: url("../images/cats/about.png");
   height: 46px;
   width: 123px;
   left: 258px;
   top: 0px;
 }
-/* @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  body.path-frontpage h1:after,
-  body.path-user h1:after {
-      background-image: url("../images/cats/about@2x.png");
-  }
-} */
-body.page-node-2 h1:after {
-  background-repeat: no-repeat;
+body.page-node-2 h1::after {
   background-image: url("../images/cats/logos.png");
-  background-size: contain;
   height: 111px;
   width: 66px;
   left: 280px;
   top: -63px;
 }
-/* @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  body.page-node-2 h1:after {
-      background-image: url("../images/cats/logos@2x.png");
-  }
-} */
-body.page-node-3 h1:after {
-  background-repeat: no-repeat;
+body.page-node-3 h1::after {
   background-image: url("../images/cats/ads.png");
-  background-size: contain;
   height: 132px;
   width: 49px;
   left: 290px;
   top: -68px;
 }
-/* @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  body.page-node-3 h1:after {
-      background-image: url("../images/cats/ads@2x.png");
-  }
-} */
-body.page-node-4 h1:after {
-  background-repeat: no-repeat;
+body.page-node-4 h1::after {
   background-image: url("../images/cats/collateral.png");
-  background-size: contain;
   height: 135px;
   width: 61px;
   left: 290px;
   top: -68px;
 }
-/* @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  body.page-node-4 h1:after {
-      background-image: url("../images/cats/collateral@2x.png");
-  }
-} */
-body.page-node-5 h1:after {
-  background-repeat: no-repeat;
+body.page-node-5 h1::after {
   background-image: url("../images/cats/realestate.png");
-  background-size: contain;
   height: 84px;
   width: 90px;
   left: 284px;
   top: -30px;
 }
-/* @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  body.page-node-5 h1:after {
-      background-image: url("../images/cats/realestate@2x.png");
-  }
-} */
-body.page-node-6 h1:after {
-  background-repeat: no-repeat;
+body.page-node-6 h1::after {
   background-image: url("../images/cats/web.png");
-  background-size: contain;
   height: 121px;
   width: 66px;
   left: 285px;
   top: -60px;
 }
-/* @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  body.page-node-6 h1:after {
-      background-image: url("../images/cats/web@2x.png");
-  }
-} */
-body.page-node-7 h1:after {
-  background-repeat: no-repeat;
+body.page-node-7 h1::after {
   background-image: url("../images/cats/sketchbook.png");
-  background-size: contain;
   height: 87px;
   width: 112px;
   left: 260px;
   top: -40px;
 }
-/* @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  body.page-node-7 h1:after {
-      background-image: url("../images/cats/sketchbook@2x.png");
-  }
-} */
-body.contact h1:after {
-  background-repeat: no-repeat;
+body.page-node-8 h1::after {
+  background-image: url("../images/cats/ceramics.png");
+  height: 63px;
+  width: 112px;
+  left: 262px;
+  top: -10px;
+}
+body.contact h1::after {
   background-image: url("../images/cats/contact.png");
-  background-size: contain;
   height: 46px;
   width: 114px;
   left: 287px;
   top: 3px;
-}
-/* @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  body.contact h1:after {
-      background-image: url("../images/cats/contact@2x.png");
-  }
-} */
-body.page-node-8 h1:after {
-  background-repeat: no-repeat;
-  background-image: url("../images/cats/ceramics.png");
-  background-size: contain;
-  height: 87px;
-  width: 112px;
-  left: 274px;
-  top: -28px;
 }
 #container {
   margin: 0 auto;
@@ -255,24 +202,24 @@ body.page-node-8 h1:after {
   left: -10000px;
   position: relative;
 }
-#header h1:after {
+#header h1::after {
   content: "";
   display: none;
   float: right;
   position: absolute;
 }
 @media only screen and (min-width: 568px) {
-  #header h1:after {
+  #header h1::after {
       display: block;
   }
 }
 @media only screen and (min-width: 835px) {
-  #header h1:after {
+  #header h1::after {
       display: none;
   }
 }
 @media only screen and (min-width: 930px) {
-  #header h1:after {
+  #header h1::after {
       display: block;
   }
 }
