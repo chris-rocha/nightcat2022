@@ -244,7 +244,7 @@ body.contact h1::after {
   white-space: nowrap;
 }
 #nav ul li + li {
-  margin-left: 18px;
+  margin-left: 16px;
 }
 #nav ul li.br {
   display: block;
