@@ -60,6 +60,7 @@ a {
 }
 body.path-frontpage h1:after,
 body.path-user h1:after {
+  background-repeat: no-repeat;
   background-image: url("../images/cats/about.png");
   background-size: 123px 46px;
   height: 46px;
@@ -67,13 +68,14 @@ body.path-user h1:after {
   left: 258px;
   top: 0px;
 }
-@media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+/* @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   body.path-frontpage h1:after,
   body.path-user h1:after {
       background-image: url("../images/cats/about@2x.png");
   }
-}
+} */
 body.page-node-2 h1:after {
+  background-repeat: no-repeat;
   background-image: url("../images/cats/logos.png");
   background-size: 66px 111px;
   height: 111px;
@@ -81,12 +83,13 @@ body.page-node-2 h1:after {
   left: 280px;
   top: -63px;
 }
-@media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+/* @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   body.page-node-2 h1:after {
       background-image: url("../images/cats/logos@2x.png");
   }
-}
+} */
 body.page-node-3 h1:after {
+  background-repeat: no-repeat;
   background-image: url("../images/cats/ads.png");
   background-size: 49px 132px;
   height: 132px;
@@ -94,12 +97,13 @@ body.page-node-3 h1:after {
   left: 290px;
   top: -68px;
 }
-@media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+/* @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   body.page-node-3 h1:after {
       background-image: url("../images/cats/ads@2x.png");
   }
-}
+} */
 body.page-node-4 h1:after {
+  background-repeat: no-repeat;
   background-image: url("../images/cats/collateral.png");
   background-size: 61px 135px;
   height: 135px;
@@ -107,12 +111,13 @@ body.page-node-4 h1:after {
   left: 290px;
   top: -68px;
 }
-@media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+/* @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   body.page-node-4 h1:after {
       background-image: url("../images/cats/collateral@2x.png");
   }
-}
+} */
 body.page-node-5 h1:after {
+  background-repeat: no-repeat;
   background-image: url("../images/cats/realestate.png");
   background-size: 90px 84px;
   height: 84px;
@@ -120,12 +125,13 @@ body.page-node-5 h1:after {
   left: 284px;
   top: -30px;
 }
-@media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+/* @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   body.page-node-5 h1:after {
       background-image: url("../images/cats/realestate@2x.png");
   }
-}
+} */
 body.page-node-6 h1:after {
+  background-repeat: no-repeat;
   background-image: url("../images/cats/web.png");
   background-size: 66px 121px;
   height: 121px;
@@ -133,12 +139,13 @@ body.page-node-6 h1:after {
   left: 285px;
   top: -60px;
 }
-@media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+/* @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   body.page-node-6 h1:after {
       background-image: url("../images/cats/web@2x.png");
   }
-}
+} */
 body.page-node-7 h1:after {
+  background-repeat: no-repeat;
   background-image: url("../images/cats/sketchbook.png");
   background-size: 112px 87px;
   height: 87px;
@@ -146,12 +153,13 @@ body.page-node-7 h1:after {
   left: 260px;
   top: -40px;
 }
-@media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+/* @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   body.page-node-7 h1:after {
       background-image: url("../images/cats/sketchbook@2x.png");
   }
-}
+} */
 body.contact h1:after {
+  background-repeat: no-repeat;
   background-image: url("../images/cats/contact.png");
   background-size: 114px 46px;
   height: 46px;
@@ -159,10 +167,19 @@ body.contact h1:after {
   left: 287px;
   top: 3px;
 }
-@media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+/* @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   body.contact h1:after {
       background-image: url("../images/cats/contact@2x.png");
   }
+} */
+body.page-node-8 h1:after {
+  background-repeat: no-repeat;
+  background-image: url("../images/cats/ceramics.png");
+  background-size: 112px 87px;
+  height: 87px;
+  width: 112px;
+  left: 260px;
+  top: -40px;
 }
 #container {
   margin: 0 auto;
