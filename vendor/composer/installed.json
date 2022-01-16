@@ -1904,6 +1904,9 @@
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "Remove file_entity_entity_base_field_info()": "https://www.drupal.org/files/issues/2021-09-09/remove_file_entity_entity_base_field_info-2655844-19.patch"
                 }
             },
             "installation-source": "dist",

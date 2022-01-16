@@ -27,6 +27,13 @@ class FileEntityPathautoTest extends FileEntityTestBase {
    * Tests Pathauto support.
    */
   public function testPathauto() {
+    $this->config('pathauto.settings')
+      ->set('enabled_entity_types', ['file'])
+      ->save();
+
+    \Drupal::service('entity_field.manager')->clearCachedFieldDefinitions();
+    \Drupal::service('plugin.manager.alias_type')->clearCachedDefinitions();
+
     $pattern = PathautoPattern::create([
       'id' => mb_strtolower($this->randomMachineName()),
       'type' => 'canonical_entities:file',

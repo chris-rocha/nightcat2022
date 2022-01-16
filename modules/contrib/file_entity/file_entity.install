@@ -197,3 +197,24 @@ function file_entity_update_8005() {
     \Drupal::entityDefinitionUpdateManager()->updateEntityType($entity_type);
   }
 }
+
+/**
+ * Update pathauto to enable path field for file entity type if there are
+ * file aliases or patterns.
+ */
+function file_entity_update_8201() {
+  if (\Drupal::moduleHandler()->moduleExists('pathauto')) {
+    $file_patterns = \Drupal::entityTypeManager()->getStorage('pathauto_pattern')->loadByProperties(['type' => 'canonical_entities:file']);
+    $file_aliases = \Drupal::entityTypeManager()->getStorage('path_alias')->getQuery()->condition('path', '/file/%', 'LIKE')->count()->execute();
+    if (!empty($file_patterns) || $file_aliases > 0) {
+      $config_factory = \Drupal::configFactory();
+      $config = $config_factory->getEditable('pathauto.settings');
+      $enabled_entity_types = $config->get('enabled_entity_types');
+      $config->set('enabled_entity_types', array_unique(array_merge($enabled_entity_types, ['file'])));
+      $config->save();
+    }
+    else {
+      \Drupal::messenger()->addMessage(t("Files no longer have an alias field by default, enable it in the pathauto settings if you wish to use that."));
+    }
+  }
+}
